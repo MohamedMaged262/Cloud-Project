@@ -1,29 +1,3 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace ZA_PLACE.Models
-{
-    public class Age
-    {
-        [Key]
-        public Guid AgeId { get; set; }
-
-        [Required]
-        [StringLength(100)]
-        [Display(Name = "Age From To")]
-        public string AgeFromTO { get; set; }
-
-        [Required]
-        [Display(Name = "Age Status")]
-        public bool AgeStatus { get; set; }
-
-        [Required]
-        [Display(Name = "Created On")]
-        public DateTime CreatedOn { get; set; }
-
-        [Display(Name = "Updated On")]
-        public DateTime? UpdatedOn { get; set; }
-
-        [Display(Name = "Course Link Id")]
-        public ICollection<Course>? Courses { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fc6dc683e16ec167ec77500301b116b8313e1f4fa65a097749b35b421204fc6d
+size 730

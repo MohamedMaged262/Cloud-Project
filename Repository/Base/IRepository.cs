@@ -1,21 +1,3 @@
-﻿using System.Linq.Expressions;
-
-namespace ZA_PLACE.Repository.Base
-{
-    public interface IRepository<T> where T : class
-    {
-        T FindById(int id);
-
-        T SelectOne(Expression<Func<T, bool>> match);
-
-        IEnumerable<T> FindAll();
-
-        IEnumerable<T> FindAll(params string[] agers);
-
-        Task<T> FindByIdAsync(int id);
-
-        Task<IEnumerable<T>> FindAllAsync();
-
-        Task<IEnumerable<T>> FindAllAsync(params string[] agers);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3012176c9e8b2b983554ebca6d92aaa5d94a4089b10b16e2409652d04d1799ab
+size 486

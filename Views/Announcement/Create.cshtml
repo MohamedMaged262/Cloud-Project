@@ -1,34 +1,3 @@
-﻿@using ZA_PLACE.ViewModel
-@model AnnouncementViewModel
-
-@{
-    Layout = "~/Views/Shared/AdminDashboard.cshtml";
-    ViewData["Title"] = "Create Announcement";
-}
-<link rel="stylesheet" href="~/css/Components.css" asp-append-version="true" />
-
-<!-- Start of Form -->
-<form asp-action="Create" method="post" enctype="multipart/form-data" class="formSection">
-    <div class="main-title">Create Announcement</div>
-
-    <!-- Course Title -->
-    <div class="mb-3">
-        <label asp-for="AnnouncementTitle" class="form-label">Announcement Title</label>
-        <input asp-for="AnnouncementTitle" class="form-control" placeholder="Announcement Title">
-        <span asp-validation-for="AnnouncementTitle" class="text-danger"></span>
-    </div>
-
-    <!-- Course Description -->
-    <div class="mb-3">
-        <label asp-for="AnnouncementDescription" class="form-label">Announcement Description</label>
-        <textarea asp-for="AnnouncementDescription" class="form-control" rows="7"></textarea>
-        <span asp-validation-for="AnnouncementDescription" class="text-danger"></span>
-    </div>
-
-    <input type="hidden" asp-for="CourseId" />
-
-    <!-- Submit Button -->
-    <div class="d-grid gap-2">
-        <input type="submit" class="btn btn-primary" value="Create Course">
-    </div>
-</form>
+version https://git-lfs.github.com/spec/v1
+oid sha256:a04192e85568f133baca0a9405c683c44631531fe9c85a3f16bbd11b43c3a049
+size 1325

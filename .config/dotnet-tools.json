@@ -1,14 +1,3 @@
-{
-  "version": 1,
-  "isRoot": true,
-  "tools": {
-    "dotnet-ef": {
-      "version": "8.0.8",
-      "commands": [
-        "dotnet-ef"
-      ],
-      "rollForward": false
-    }
-  }
-  
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e06d9a7f63009fe328b160371c6c8ccaded6b9fc9ed8d5c2bc074eea300839dc
+size 199

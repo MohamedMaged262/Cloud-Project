@@ -1,4 +1,3 @@
-﻿<Project>
-  <Import Project="Microsoft.AspNetCore.StaticWebAssetEndpoints.props" />
-  <Import Project="Microsoft.AspNetCore.StaticWebAssets.props" />
-</Project>
+version https://git-lfs.github.com/spec/v1
+oid sha256:a0c8334649677304f9eb88453fed84de58421ad0cfdabb314223a36d0a741a51
+size 166

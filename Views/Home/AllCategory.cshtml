@@ -1,28 +1,3 @@
-﻿@model IEnumerable<Category>
-
-@{
-    ViewData["Title"] = "Categories";
-}
-
-<!-- parallax Section -->
-<section class="parallax parallax-Category" id="parallax">
-    <div class="parallax-inner">
-        <h1>Categories</h1>
-    </div>
-</section>
-<!-- Section1 -->
-<section class="categories" id="categories">
-    <div class="center-text">
-        <h5>Categories</h5>
-        <h2>Popular Categories</h2>
-    </div>
-    <div class="categories-content">
-        @foreach(var item in Model)
-        {
-            <div class="box">
-                <img src="@Url.Content(item.CategoryImagePath)" class="img-fluid rounded-start" alt="News Image">
-                <h3>@item.CategoryName</h3>
-            </div>
-        }
-    </div>
-</section>
+version https://git-lfs.github.com/spec/v1
+oid sha256:f6815632e7e70c0bd534d7cfc77802bb370aaa4dad36c0293d42b2ea73c81ea9
+size 763

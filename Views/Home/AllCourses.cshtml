@@ -1,31 +1,3 @@
-﻿@model IEnumerable<Course>
-@{
-    ViewData["Title"] = "Categories";
-}
-
-<!-- parallax Section -->
-<section class="parallax parallax-Courses" id="parallax">
-    <div class="parallax-inner">
-        <h1>Courses</h1>
-    </div>
-</section>
-
-<section class="Courses" id="Course">
-    <div class="center-text">
-        <h5>Courses</h5>
-        <h2>Explore Popular Courses</h2>
-    </div>
-    <div class="courses-content">
-        @foreach (var course in Model)
-        {
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="~/imgs/@course.CourseImagePath" alt="Course image">
-                <div class="card-body">
-                    <h5 class="card-title">@course.CourseName</h5>
-                    <p class="card-text">@course.CourseDescription</p>
-                    <a href="#" class="btn btn-primary custom-btn">Apply Now</a>
-                </div>
-            </div>
-        }
-    </div>
-</section>
+version https://git-lfs.github.com/spec/v1
+oid sha256:09f56433d28c296670d5c86bad0d0b78c7ff1d7379deeca9a2dff7da9183ea78
+size 981

@@ -1,13 +1,3 @@
-﻿const header = document.querySelector('header')
-
-window.addEventListener('scroll', function () {
-    header.classList.toggle('sticky', window.scrollY > 0);
-});
-
-let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-menu.onclick = () => {
-    menu.classList.toggle('bx-x');
-    navbar.classList.toggle('open');
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a06b32d8b85f88a1fba9da4bc410086f00333f97c32b370e0963fc66fc9d3bf1
+size 372
