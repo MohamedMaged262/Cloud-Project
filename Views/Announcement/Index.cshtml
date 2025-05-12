@@ -1,0 +1,23 @@
+﻿@using ZA_PLACE.Models
+@model IEnumerable<Announcement>
+
+@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+    ViewData["Title"] = "Announcement";
+}
+<link rel="stylesheet" href="~/css/Components.css" asp-append-version="true" />
+
+@foreach(var item in Model)
+{
+    <div class="card m-3">
+        <div class="card-header">
+            @item.AnnouncementTitle
+        </div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>@item.AnnouncementDescription</p>
+                <footer class="blockquote-footer">Created On: @item.CreatedOn </footer>
+            </blockquote>
+        </div>
+    </div>
+}

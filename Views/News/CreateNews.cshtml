@@ -1,0 +1,47 @@
+﻿@model ZA_PLACE.ViewModel.NewsViewModel
+
+
+@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+}
+
+@{
+    ViewData["Title"] = "Create News";
+}
+<link rel="stylesheet" href="~/css/Components.css" asp-append-version="true" />
+
+<!-- Start of Form -->
+<form action="" method="post" enctype="multipart/form-data" class="formSection">
+    <div class="main-title">Create News</div>
+    <div class="mb-3">
+        <label asp-for="NewsTitle" class="form-label">News Title</label>
+        <input type="text" class="form-control" id="NewsTitle" asp-for="NewsTitle" placeholder="News Title">
+        <span asp-validation-for="NewsTitle" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="NewsDescription" class="form-label">News Description</label>
+        <textarea class="form-control" asp-for="NewsDescription" id="NewsDescription" rows="7"></textarea>
+        <span asp-validation-for="NewsDescription" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="clientFile" class="form-label">Upload News Image</label>
+        <input asp-for="clientFile" class="form-control" type="file" id="formFile" onchange="loadFile(event)" required>
+        <span asp-validation-for="clientFile" class="text-danger"></span>
+        <img id="myImg" height="150" />
+    </div>
+    <div class="d-grid gap-2 ">
+        <input type="submit" class="btn btn-primary">
+    </div>
+</form>
+<!-- end -->
+
+<script>
+    var loadFile = function(event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var myImg = document.getElementById('myImg');
+            myImg.src = reader.result;
+        }
+        reader.readAsDataURL(event.target.files[0])
+    }
+</script>

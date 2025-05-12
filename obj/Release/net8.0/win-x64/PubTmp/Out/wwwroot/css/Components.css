@@ -1,0 +1,71 @@
+body{
+    color: black;
+}
+.newNews{
+    padding: 25px;
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 25px;
+    box-shadow: var(--box-shadow);
+}
+.newNews a{
+    font-size: 80px;
+    color: var(--main-color);
+}
+.newNews .NewNewsText{
+    color: var(--main-color);
+}
+.CardStyle{
+    color: var(--main-color);
+}
+/* form */
+.formSection {
+    background-color: white;
+    padding: 25px;
+    border-radius: 7px;
+    box-shadow: var(--box-shadow);
+    color: black;
+}
+.formSection .main-title {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+/* Table */
+.tablestyle {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+}
+/* Courses */
+.CoursesComponent {
+    padding: 25px;
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 25px;
+    box-shadow: var(--box-shadow);
+}
+
+    .CoursesComponent a {
+        font-size: 80px;
+        color: var(--main-color);
+    }
+
+    .CoursesComponent .NewCoursesText {
+        color: var(--main-color);
+    }

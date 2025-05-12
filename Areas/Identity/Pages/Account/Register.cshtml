@@ -1,0 +1,182 @@
+﻿@page
+@model RegisterModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Signup";
+}
+<link rel="stylesheet" href="~/css/SignINstyle.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<div class="wrapper">
+    <h1>Signup</h1>
+    <p id="error-message"></p>
+    <form id="form" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+        <div>
+            <label for="FullName-input">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                    <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z" />
+                </svg>
+            </label>
+            <input asp-for="Input.FullName" class="form-control" type="text" aria-required="true"
+                   placeholder="Fares Hassan" required />
+            <span asp-validation-for="Input.FullName" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label for="PhoneNumber-input">
+                <svg aria-hidden="true" focusable="false" class="icon" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 512 512" width="1em"
+                     height="1em">
+                    <path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z" />
+                </svg>
+            </label>
+            <input asp-for="Input.PhoneNumber" class="form-control" type="tel" aria-required="true"
+                   placeholder="01000000000" required />
+            <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label for="DoB-input">
+                <i class="bi bi-cake-fill"></i>
+            </label>
+            <input asp-for="Input.DoB" class="form-control" type="date" aria-required="true"
+                   placeholder="00/00/0000" required />
+            <span asp-validation-for="Input.DoB" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label for="email-input">
+                <label for="Input.Email"><i class="bi bi-envelope"></i></label>
+            </label>
+            <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true"
+                   placeholder="name@example.com" />
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label for="password-input">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                    <path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z" />
+                </svg>
+            </label>
+            <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true"
+                   placeholder="password" />
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label for="repeat-password-input">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                    <path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z" />
+                </svg>
+            </label>
+            <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true"
+                   placeholder="Confirm password" />
+            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <div class="gender-group">
+                <div class="gender-options">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Input.Gender" id="GenderMale" value="true" asp-for="Input.Gender">
+                        <label class="form-check-label" for="GenderMale">
+                            <i class="bi bi-gender-male"></i> Male
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Input.Gender" id="GenderFemale" value="false" asp-for="Input.Gender">
+                        <label class="form-check-label" for="GenderFemale">
+                            <i class="bi bi-gender-female"></i> Female
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="role-group">
+                <div class="gender-options">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Input.Permision" id="Role1" value="1" asp-for="Input.Permision">
+                        <label class="form-check-label" for="Role1">
+                            Student
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Input.Permision" id="Role2" value="2" asp-for="Input.Permision">
+                        <label class="form-check-label" for="Role2">
+                            Teacher
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit">Signup</button>
+    </form>
+    <p>Already have an Account? <a asp-area="Identity" asp-page="/Account/Login">login</a> </p>
+</div>
+
+<script type="text/javascript" src="../js/validation.js" defer></script>
+
+
+@* <div class="row">
+    <div class="col-md-4">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <h2>Create a new account.</h2>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                <label asp-for="Input.Email">Email</label>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.Password">Password</label>
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+        </form>
+    </div>
+    <div class="col-md-6 col-md-offset-2">
+        <section>
+            <h3>Use another service to register.</h3>
+            <hr />
+            @{
+                if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                {
+                    <div>
+                        <p>
+                            There are no external authentication services configured. See this <a href="">article
+                            about setting up this ASP.NET application to support logging in via external services</a>.
+                        </p>
+                    </div>
+                }
+                else
+                {
+                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                        <div>
+                            <p>
+                                @foreach (var provider in Model.ExternalLogins!)
+                                {
+                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                }
+                            </p>
+                        </div>
+                    </form>
+                }
+            }
+        </section>
+    </div>
+</div> *@
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

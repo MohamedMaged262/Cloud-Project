@@ -1,0 +1,51 @@
+﻿@model ZA_PLACE.Models.CategoryViewModel
+
+@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+}
+
+@{
+    ViewData["Title"] = "Create Category";
+}
+<link rel="stylesheet" href="~/css/Components.css" asp-append-version="true" />
+
+<!-- Start of Form -->
+<form action="" method="post" enctype="multipart/form-data" class="formSection">
+    <div class="main-title">Create News</div>
+    <div class="mb-3">
+        <label asp-for="CategoryName" class="form-label">Category Title</label>
+        <input type="text" class="form-control" id="CategoryName" asp-for="CategoryName" placeholder="Category Title">
+        <span asp-validation-for="CategoryName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="clientFile" class="form-label">Upload News Image</label>
+        <input asp-for="clientFile" class="form-control" type="file" id="formFile" onchange="loadFile(event)">
+        <img id="myImg" height="150" />
+    </div>
+    <div class="d-grid gap-2 ">
+        <input type="submit" class="btn btn-primary">
+    </div>
+</form>
+<!-- end -->
+@if (TempData["Error"] != null)
+{
+    <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                @TempData["Error"]
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+}
+
+<script>
+    var loadFile = function (event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var myImg = document.getElementById('myImg');
+            myImg.src = reader.result;
+        }
+        reader.readAsDataURL(event.target.files[0])
+    }
+</script>

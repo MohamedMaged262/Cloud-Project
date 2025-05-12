@@ -1,0 +1,5 @@
+echo "bin/" >> .dockerignore
+echo "obj/" >> .dockerignore
+echo ".vs/" >> .dockerignore
+echo "*.user" >> .dockerignore
+echo "*.suo" >> .dockerignore

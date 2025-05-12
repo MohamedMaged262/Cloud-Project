@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+    ViewData["Title"] = "Payment Success";
+}
+
+<div class="card">
+    <h5 class="card-header alert-success">Payment Successfully</h5>
+    <div class="card-body">
+        <h5 class="card-title">Success</h5>
+        <p class="card-text">Thank you for your payment. Your course content will be available shortly.</p>
+        <a href="@Url.Action("Index", "Payment")" class="btn btn-primary">Back to Home</a>
+    </div>
+</div>

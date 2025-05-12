@@ -1,0 +1,55 @@
+﻿@model ZA_PLACE.Models.Content
+
+@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+    ViewData["Title"] = "Create Content";
+}
+<link rel="stylesheet" href="~/css/Components.css" asp-append-version="true" />
+
+<form asp-action="AddContent" asp-controller="Content" method="post" enctype="multipart/form-data" class="formSection">
+    @Html.AntiForgeryToken()
+    <div class="main-title">Create Content</div>
+
+    <!-- Content Name -->
+    <div class="mb-3">
+        <label asp-for="ContentName" class="form-label">Content Title</label>
+        <input asp-for="ContentName" class="form-control" id="ContentName" placeholder="Content Title" />
+        <span asp-validation-for="ContentName" class="text-danger"></span>
+    </div>
+
+    <!-- Content Description -->
+    <div class="mb-3">
+        <label asp-for="ContentDescription" class="form-label">Content Description</label>
+        <textarea asp-for="ContentDescription" class="form-control" id="ContentDescription" rows="7"></textarea>
+        <span asp-validation-for="ContentDescription" class="text-danger"></span>
+    </div>
+
+    <!-- Content Meeting Link -->
+    <div class="mb-3">
+        <label asp-for="ContentMeetingLink" class="form-label">Meeting Link</label>
+        <input asp-for="ContentMeetingLink" class="form-control" id="ContentMeetingLink" placeholder="Meeting Link" />
+        <span asp-validation-for="ContentMeetingLink" class="text-danger"></span>
+    </div>
+
+    <!-- Content Date -->
+    <div class="mb-3">
+        <label asp-for="ContentDate" class="form-label">Content Date</label>
+        <input asp-for="ContentDate" class="form-control" type="date" placeholder="Content Date" />
+        <span asp-validation-for="ContentDate" class="text-danger"></span>
+    </div>
+
+    <!-- Content Price -->
+    <div class="mb-3">
+        <label asp-for="ContentPrice" class="form-label">Content Price</label>
+        <input asp-for="ContentPrice" class="form-control" id="ContentPrice" placeholder="Price" />
+        <span asp-validation-for="ContentPrice" class="text-danger"></span>
+    </div>
+
+    <!-- Course ID as hidden input -->
+    <input type="hidden" asp-for="CourseId" value="@ViewBag.CourseId" />
+
+    <!-- Submit Button -->
+    <div class="d-grid gap-2">
+        <input type="submit" class="btn btn-primary" value="Create Content" />
+    </div>
+</form>

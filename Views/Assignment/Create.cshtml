@@ -1,0 +1,48 @@
+﻿@using ZA_PLACE.ViewModel
+@model AssignmentViewModel
+
+@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+    ViewData["Title"] = "Create Announcement";
+}
+<link rel="stylesheet" href="~/css/Components.css" asp-append-version="true" />
+
+<!-- Start of Form -->
+<form asp-action="Create" method="post" enctype="multipart/form-data" class="formSection">
+    <div class="main-title">Create Assignment</div>
+
+    <!-- Course Title -->
+    <div class="mb-3">
+        <label asp-for="AssignmentName" class="form-label">Assignment Title</label>
+        <input asp-for="AssignmentName" class="form-control" placeholder="Assignment Title">
+        <span asp-validation-for="AssignmentName" class="text-danger"></span>
+    </div>
+
+    <!-- Course Description -->
+    <div class="mb-3">
+        <label asp-for="AssignmentDescription" class="form-label">Assignment Description</label>
+        <textarea asp-for="AssignmentDescription" class="form-control" rows="7"></textarea>
+        <span asp-validation-for="AssignmentDescription" class="text-danger"></span>
+    </div>
+
+    <!-- Course Title -->
+    <div class="mb-3">
+        <label asp-for="AssignmentLink" class="form-label">Assignment Link</label>
+        <input asp-for="AssignmentLink" class="form-control" placeholder="Assignment Link">
+        <span asp-validation-for="AssignmentLink" class="text-danger"></span>
+    </div>
+
+    <!-- Course Title -->
+    <div class="mb-3">
+        <label asp-for="AssignmentDueDate" class="form-label">Assignment Due Date</label>
+        <input asp-for="AssignmentDueDate" class="form-control" type="date" placeholder="Assignment DueDate">
+        <span asp-validation-for="AssignmentDueDate" class="text-danger"></span>
+    </div>
+
+    <input type="hidden" asp-for="CourseId" />
+
+    <!-- Submit Button -->
+    <div class="d-grid gap-2">
+        <input type="submit" class="btn btn-primary" value="Create Course">
+    </div>
+</form>

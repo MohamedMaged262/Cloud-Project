@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Payment>
+
+@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+}
+
+@{
+    ViewData["Title"] = "Payment Dashboard";
+}
+<link rel="stylesheet" href="~/css/Components.css" asp-append-version="true" />
+
+<div class="tablestyle">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Payment View</h2>
+        </div>
+    </div>
+    <!-- Table Section -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Payment Reason</th>
+                <th scope="col">Payment Type</th>
+                <th scope="col">Payment Status</th>
+                <th scope="col">Category Image</th>
+                <th scope="col">Created On</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.PaymentReason</td>
+                    <td>@item.PaymentType</td>
+                    <td>@item.PaymentStatus</td>
+                    <td>
+                        <img src="@Url.Content(item.PaymentImgPath)" class="img-fluid rounded-start" alt="Uploaded payment" style="height: 100px">
+                    </td>
+                    <td>@item.CreatedOn</td>
+               </tr>
+            }
+        </tbody>
+    </table>
+</div>

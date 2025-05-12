@@ -1,0 +1,397 @@
+﻿@using System.Security.Claims
+@using ZA_PLACE.Helpers
+@model ZA_PLACE.Models.CourseViewModel
+
+@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+}
+
+@{
+    ViewData["Title"] = "Course";
+}
+
+<link rel="stylesheet" href="~/css/Components.css" asp-append-version="true" />
+
+<div class="card mb-3">
+    <img src="@Url.Content(Model.Course.CourseImagePath)" class="card-img-top" style="height: 300px;" alt="Course Image">
+    <div class="card-body">
+        <h5 class="card-title" style="color: black;">@Model.Course.CourseName</h5>
+        <p class="card-text p-0 m-0" style="color: var(--second-color);">@Model.Course.CourseDescription</p>
+        <p class="card-text p-0 m-0" style="color: var(--second-color);">Course Age: @Model.Course.Age?.AgeFromTO</p>
+        @if (!Model.IsUserEnrolled)  // Only show if the user is not enrolled
+        {
+            <form asp-action="EnrollNow" method="post">
+                <input type="hidden" name="courseId" value="@Model.Course.CourseId" />
+                <button class="btn btn-outline-primary mt-3" type="submit">Enroll Now</button>
+            </form>
+        }
+        else
+        {
+            <p>You are already enrolled in this course.</p>
+        }
+    </div>
+    @if (User.IsInRole(clsRoles.roleTeacher) || User.IsInRole(clsRoles.roleAdmin))
+    {
+        <div class="container-fluid full-height d-flex justify-content-center align-items-center m-3">
+            <div class="row no-gutters">
+            <div class="col-sm-6 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem; align-items: center;">
+                    <i class='bx bxs-book-open' style="font-size: 135px;"></i>                   
+                    <div class="card-body">
+                        <a asp-controller="Content"
+                            asp-action="CreateContent"
+                            asp-route-id="@Model.Course.CourseId"
+                            class="btn btn-primary">
+                            Create New Content
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem; align-items: center;">
+                    <i class='bx bx-upload' style="font-size: 135px;"></i>
+                    <div class="card-body">
+                        <a asp-controller="Resource"
+                            asp-action="CreateResource"
+                            class="btn btn-primary">
+                            Upload File
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem; align-items: center;">
+                    <i class='bx bxs-news' style="font-size: 135px;"></i>
+                    <div class="card-body">
+                        <form asp-controller="Announcement" asp-action="Create" method="post">
+                            <input type="hidden" name="courseId" value="@Model.Course.CourseId" />
+                            <button class="btn btn-outline-primary mt-3" type="submit">Create Announcement</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem; align-items: center;">
+                    <i class='bx bx-book-open' style="font-size: 135px;"></i>
+                    <div class="card-body">
+                        <form asp-controller="Assignment" asp-action="Create" method="post">
+                            <input type="hidden" name="courseId" value="@Model.Course.CourseId" />
+                            <button class="btn btn-outline-primary mt-3" type="submit">Create Assignment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+    @{
+        var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        var userId = currentUserId.ToString();
+        var userPayments = Model.Payments.Where(p => p.CreatedBy == userId).ToList(); // Get user payments
+    }
+
+    <div class="container">
+        @if (Model.Contents != null && Model.Contents.Any())
+        {
+            foreach (var content in Model.Contents)
+            {
+                // Check if the user has paid for the current content
+                var hasPaid = userPayments.Any(p => p.PaymentReason.Contains(content.ContentName) && p.PaymentStatus == true);
+
+                <div class="card m-3">
+                    <h5 class="card-header">@content.ContentName</h5>
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: var(--main-color);">Content Description:</h5>
+                        <p class="card-text" style="color: var(--second-color);">
+                            @content.ContentDescription
+                        </p>
+                        <p class="card-text" style="color: var(--second-color);">
+                            @content.ContentDate
+                        </p>
+                        <p class="card-text" style="color: var(--main-color);">
+                            @content.ContentPrice Egp
+                        </p>
+
+                        <!-- List of Resources for this content -->
+                        @if (hasPaid || User.IsInRole(clsRoles.roleAdmin))
+                        {
+                            <ul class="list-group list-group-numbered">
+                                @if (Model.Resources != null && Model.Resources.Any(r => r.ContentId == content.ContentId))
+                                {
+                                    foreach (var resource in Model.Resources.Where(r => r.ContentId == content.ContentId))
+                                    {
+                                        <li class="list-group-item">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                @if (!string.IsNullOrEmpty(resource.ResourceFile))
+                                                {
+                                                    <a href="@Url.Content(resource.ResourceFile)" target="_blank" download>
+                                                        @resource.ResourceName (Download)
+                                                    </a>
+                                                }
+                                                else if (!string.IsNullOrEmpty(resource.ResourceLink))
+                                                {
+                                                    <a href="@resource.ResourceLink" target="_blank">
+                                                        @resource.ResourceName (External Link)
+                                                    </a>
+                                                }
+                                                else
+                                                {
+                                                    @resource.ResourceName
+                                                }
+
+                                                @if (User.IsInRole(clsRoles.roleTeacher) || User.IsInRole(clsRoles.roleAdmin))
+                                                {
+                                                    <!-- Delete button -->
+                                                    <button class="btn btn-danger btn-sm" onclick="deleteResource('@resource.ResourceId')">
+                                                        <i class='bx bxs-trash'></i>
+                                                    </button>
+                                                }
+                                            </div>
+                                        </li>
+                                    }
+                                }
+                                else
+                                {
+                                    <li class="list-group-item">No resources available for this content.</li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <p class="text-danger">You need to pay to access the resources for this content.</p>
+                        }
+
+                        <!-- Button container with actions related to the content -->
+                        <div class="btn-container m-3 d-flex">
+                            @if (User.IsInRole(clsRoles.roleAdmin)) // Check if the user is in the Admin role
+                            {
+                                if (content.ContentStatus == true)
+                                {
+                                    <button class="btn btn-outline-success m-3" onclick="changeStatus('@content.ContentId', true)">Active</button>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-outline-danger m-3" onclick="changeStatus('@content.ContentId', false)">Not-Active</button>
+                                }
+                            }
+                            @if (hasPaid == false && User.IsInRole(clsRoles.roleStudent))
+                            {
+                                <a href="#" class="btn btn-outline-danger m-3">Not-Paid</a>
+                            }
+                            @if (hasPaid == true && User.IsInRole(clsRoles.roleStudent))
+                            {
+                                <a href="#" class="btn btn-outline-success m-3">Paid</a>
+                            }
+
+                            @if (hasPaid == false && User.IsInRole(clsRoles.roleStudent))
+                            {
+                                <!-- Pay Now button -->
+                                <form method="post" action="@Url.Action("Checkout", "Payment", new { contentId = content.ContentId })">
+                                    <button id="checkout-button" type="submit" class="btn btn-primary m-3">Pay Now</button>
+                                </form>
+                            }
+                            @if(hasPaid == true)
+                            {
+                                <a href="@content.ContentMeetingLink" class="btn btn-primary m-3" target="_blank">Go to Meet</a>
+                            }
+                            @if (User.IsInRole(clsRoles.roleTeacher) || User.IsInRole(clsRoles.roleAdmin))
+                            {
+                                <a class="btn btn-success m-3" href="@Url.Action("EditContent", "Content", new { id = content.ContentId })">
+                                    <i class='bx bxs-edit-alt'></i> Edit
+                                </a>
+                                <button type="button" class="btn btn-danger m-3" onclick="confirmDelete('@content.ContentId')">
+                                    <i class='bx bxs-trash'></i>
+                                </button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No content available for this course.</p>
+        }
+    </div>
+
+
+
+    <form id="csrf-form" method="post">
+        @Html.AntiForgeryToken()
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript">
+        function confirmDelete(contentId) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "This action cannot be undone!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    const tokenElement = document.querySelector('input[name="__RequestVerificationToken"]');
+                    const token = tokenElement ? tokenElement.value : '';
+
+                    if (!token) {
+                        Swal.fire(
+                            'Error!',
+                            'CSRF token is missing.',
+                            'error'
+                        );
+                        return;
+                    }
+
+                    fetch(`/Content/DeleteContent/${contentId}`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'RequestVerificationToken': token
+                        }
+                    }).then(response => {
+                        if (response.ok) {
+                            Swal.fire(
+                                'Deleted!',
+                                'The content has been deleted.',
+                                'success'
+                            ).then(() => {
+                                location.reload();
+                            });
+                        } else {
+                            return response.text().then(text => {
+                                Swal.fire(
+                                    'Error!',
+                                    `An error occurred while deleting the content: ${text}`,
+                                    'error'
+                                );
+                            });
+                        }
+                    }).catch(error => {
+                        console.error('Error:', error);
+                        Swal.fire(
+                            'Error!',
+                            'An unexpected error occurred.',
+                            'error'
+                        );
+                    });
+                }
+            });
+        }
+
+        function changeStatus(contentId, newStatus) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You are about to change the status of this content.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, change it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    const tokenElement = document.querySelector('input[name="__RequestVerificationToken"]');
+                    const token = tokenElement ? tokenElement.value : '';
+
+                    if (!token) {
+                        Swal.fire(
+                            'Error!',
+                            'CSRF token is missing.',
+                            'error'
+                        );
+                        return;
+                    }
+
+                    fetch('/Content/ChangeStatus', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'RequestVerificationToken': token
+                        },
+                        body: JSON.stringify({
+                            courseId: contentId,
+                            status: newStatus
+                        })
+                    }).then(response => {
+                        if (response.ok) {
+                            Swal.fire(
+                                'Updated!',
+                                'Content status has been updated.',
+                                'success'
+                            ).then(() => {
+                                location.reload();
+                            });
+                        } else {
+                            return response.text().then(text => {
+                                Swal.fire(
+                                    'Error!',
+                                    `An error occurred while updating the content status: ${text}`,
+                                    'error'
+                                );
+                            });
+                        }
+                    }).catch(error => {
+                        console.error('Error:', error);
+                        Swal.fire(
+                            'Error!',
+                            'An unexpected error occurred.',
+                            'error'
+                        );
+                    });
+                }
+            });
+        }
+    </script>
+</div>
+<!-- Add JavaScript to handle the deletion -->
+<script>
+    function deleteResource(resourceId) {
+        if (!confirm('Are you sure you want to delete this resource?')) {
+            return;
+        }
+
+        const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+        fetch(`/Resource/DeleteResource/${resourceId}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'RequestVerificationToken': token
+            },
+            body: JSON.stringify({ __RequestVerificationToken: token }) // Passing the anti-forgery token
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Resource deleted successfully.');
+                    // Optionally reload the page or update the UI dynamically
+                    location.reload(); // Or remove the item from the list dynamically
+                } else {
+                    alert(data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while trying to delete the resource.');
+            });
+    }
+
+</script>
+
+<script src="https://js.stripe.com/v3/"></script>
+<script type="text/javascript">
+    var stripe = Stripe('@ViewBag.StripePublishableKey');
+    var checkoutButton = document.getElementById('checkout-button');
+
+    checkoutButton.addEventListener('click', function () {
+        stripe.redirectToCheckout({
+            sessionId: '@ViewBag.SessionId'
+        }).then(function (result) {
+            if (result.error) {
+                alert(result.error.message);
+            }
+        });
+    });
+</script>

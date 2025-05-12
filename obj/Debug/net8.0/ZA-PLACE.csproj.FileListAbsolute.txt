@@ -1,0 +1,295 @@
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\appsettings.Development.json
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\appsettings.json
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ZA-PLACE.staticwebassets.runtime.json
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ZA-PLACE.exe
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ZA-PLACE.deps.json
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ZA-PLACE.runtimeconfig.json
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ZA-PLACE.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ZA-PLACE.pdb
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Azure.Core.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Azure.Identity.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Humanizer.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\System.CodeDom.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.csproj.AssemblyReference.cache
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.GeneratedMSBuildEditorConfig.editorconfig
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.AssemblyInfoInputs.cache
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.AssemblyInfo.cs
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.csproj.CoreCompileInputs.cache
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.MvcApplicationPartsAssemblyInfo.cs
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.MvcApplicationPartsAssemblyInfo.cache
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.RazorAssemblyInfo.cache
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.RazorAssemblyInfo.cs
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\staticwebassets.build.json
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\staticwebassets.development.json
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\staticwebassets\msbuild.ZA-PLACE.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\staticwebassets\msbuild.build.ZA-PLACE.props
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ZA-PLACE.props
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ZA-PLACE.props
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\scopedcss\bundle\ZA-PLACE.styles.css
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\scopedcss\projectbundle\ZA-PLACE.bundle.scp.css
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.csproj.Up2Date
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.dll
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\refint\ZA-PLACE.dll
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.pdb
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.genruntimeconfig.cache
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\ref\ZA-PLACE.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Stripe.net.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\System.ClientModel.dll
+D:\Freelancing\ZA-PLACE\bin\Debug\net8.0\ZA-PLACE.staticwebassets.endpoints.json
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\staticwebassets\msbuild.ZA-PLACE.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Freelancing\ZA-PLACE\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\appsettings.Development.json
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\appsettings.json
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ZA-PLACE.staticwebassets.endpoints.json
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ZA-PLACE.staticwebassets.runtime.json
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ZA-PLACE.exe
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ZA-PLACE.deps.json
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ZA-PLACE.runtimeconfig.json
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ZA-PLACE.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ZA-PLACE.pdb
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Azure.Core.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Azure.Identity.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Humanizer.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\Stripe.net.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\System.ClientModel.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\System.CodeDom.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.csproj.AssemblyReference.cache
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.GeneratedMSBuildEditorConfig.editorconfig
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.AssemblyInfoInputs.cache
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.AssemblyInfo.cs
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.csproj.CoreCompileInputs.cache
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.MvcApplicationPartsAssemblyInfo.cs
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.MvcApplicationPartsAssemblyInfo.cache
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.RazorAssemblyInfo.cache
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.RazorAssemblyInfo.cs
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\scopedcss\bundle\ZA-PLACE.styles.css
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\scopedcss\projectbundle\ZA-PLACE.bundle.scp.css
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\staticwebassets.build.json
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\staticwebassets.development.json
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\staticwebassets\msbuild.ZA-PLACE.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\staticwebassets\msbuild.ZA-PLACE.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\staticwebassets\msbuild.build.ZA-PLACE.props
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ZA-PLACE.props
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ZA-PLACE.props
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.csproj.Up2Date
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\refint\ZA-PLACE.dll
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.pdb
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\ZA-PLACE.genruntimeconfig.cache
+D:\Uni\Semster 8\Cloud Computing\ZA-PLACE\obj\Debug\net8.0\ref\ZA-PLACE.dll
