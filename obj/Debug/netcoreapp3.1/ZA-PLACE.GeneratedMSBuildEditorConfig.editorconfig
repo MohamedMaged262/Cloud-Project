@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cfce58b4327362cd3ad9f9a61b354f2b3d08e66dfdbe74814af8f04ddefaca4b
-size 212
+is_global = true
+build_property.RootNamespace = ZA-PLACE
+build_property.ProjectDir = D:\Freelancing\ZA-PLACE\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

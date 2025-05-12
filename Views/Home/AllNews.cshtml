@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96c188c56f439d67b35df0e170ce54d02d128df815c7cbbb6d96c75dfd94dfbb
-size 1114
+﻿@model IEnumerable<News>
+@{
+    ViewData["Title"] = "News & Articles";
+}
+
+<!-- parallax Section -->
+<section class="parallax parallax-news" id="parallax">
+    <div class="parallax-inner">
+        <h1>Article</h1>
+    </div>
+</section>
+<!-- Section1 -->
+<section class="newsUser">
+    @foreach (var News in Model)
+    {
+        <div class="card mb-3 CardStyle" style="max-width: 100%;">
+            <div class="row g-0 p-3">
+                <div class="col-md-4">
+                    <img src="@Url.Content(News.NewsPhotoPath)" class="img-fluid rounded-start" alt="News Image">
+                </div>
+                <div class="col-md-8 p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">@News.NewsTitle</h5>
+                        <p class="card-text">
+                            @News.NewsDescription
+                        </p>
+                        <p class="card-text"><small class="text-muted">@News.CreatedOn</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</section>

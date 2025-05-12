@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:776894f1ec0609f11bf950c273b01e849eb019e1dbe086800e7de77bca56f283
-size 883
+﻿// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
+#nullable disable
+
+using Microsoft.AspNetCore.Mvc.RazorPages;
+
+namespace ZA_PLACE.Areas.Identity.Pages.Account
+{
+    /// <summary>
+    ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+    ///     directly from your code. This API may change or be removed in future releases.
+    /// </summary>
+    public class AccessDeniedModel : PageModel
+    {
+        /// <summary>
+        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+        ///     directly from your code. This API may change or be removed in future releases.
+        /// </summary>
+        public void OnGet()
+        {
+        }
+    }
+}

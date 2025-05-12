@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:67f027174f358d7280ca9a417d6a2e06825463ca03dd55bd14f17a6255e3e91f
-size 1212
+﻿using Newtonsoft.Json.Serialization;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using ZA_PLACE.Models;
+
+namespace ZA_PLACE.ViewModel
+{
+    public class AnnouncementViewModel
+    {
+        [Key]
+        public Guid AnnouncementId { get; set; }
+        [Required(ErrorMessage = "Please Enter Announcement Title")]
+        [StringLength(100, ErrorMessage = "The Announcement Title must be at least 1 and at most 100 characters long.")]
+        public string AnnouncementTitle { get; set; }
+        [Required(ErrorMessage = "Please Enter Announcement Description")]
+        [StringLength(2500, ErrorMessage = "The Announcement Description must be at least 1 and at most 100 characters long.")]
+        public string AnnouncementDescription { get; set; }
+        public string? CreatedBy { get; set; }
+        [Required]
+        public DateTime CreatedOn { get; set; } = DateTime.Now;
+        // Foreign Key to Course
+        [Required]
+        [Display(Name = "Course")]
+        [ForeignKey("Course")]
+        public Guid CourseId { get; set; }
+
+        // Navigation property
+        public Course? Course { get; set; }
+    }
+}

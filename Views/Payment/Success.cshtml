@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04a18dccbe76e89a94053ebff741bc505cec0b1de334591e9ee213edd3bdf017
-size 492
+﻿@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+    ViewData["Title"] = "Payment Success";
+}
+
+<div class="card">
+    <h5 class="card-header alert-success">Payment Successfully</h5>
+    <div class="card-body">
+        <h5 class="card-title">Success</h5>
+        <p class="card-text">Thank you for your payment. Your course content will be available shortly.</p>
+        <a href="@Url.Action("Index", "Payment")" class="btn btn-primary">Back to Home</a>
+    </div>
+</div>

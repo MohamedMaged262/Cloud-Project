@@ -1,3 +1,105 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2c80f45c67e4e4a7627e02287f16ea53074657d44bc504c5924ea303f12a4bf
-size 4336
+﻿@model IEnumerable<UserExtra>
+
+@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+    ViewData["Title"] = "User Dashboard";
+}
+<link rel="stylesheet" href="~/css/Components.css" asp-append-version="true" />
+
+<div class="tablestyle">
+    <!-- Table Section -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Full Name</th>
+                <th scope="col">User Image</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">User Status</th>
+                <th scope="col">User Role</th>
+                <th scope="col">Created On</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.FullName</td>
+                    <td>
+                        <!-- Check if ProfilePicture is null and provide a fallback image -->
+                        <img src="@Url.Content(item.ProfilePicture ?? "~/images/default-profile.png")" class="img-fluid rounded-start" alt="User Image" style="height: 100px">
+                    </td>
+                    <td>@item.PhoneNumber</td>
+                    <td>
+                        @if (item.UserStatus == true)
+                        {
+                            <button class="btn btn-outline-success" onclick="changeStatus('@item.Id')">Active</button>
+                        }
+                        else
+                        {
+                            <button class="btn btn-outline-danger" onclick="changeStatus('@item.Id')">Not-Active</button>
+                        }
+                    </td>
+                    <td>@item.RoleName</td>
+                    <td>@item.CreatedOn</td>
+                    <td>
+                        <button type="button" class="btn btn-success" onclick="window.location.href='@Url.Action("EditUser", "User", new { id = item.Id })'">
+                            <i class='bx bxs-edit-alt'></i>
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Include CSRF token for fetch request -->
+<form id="csrf-form">
+    @Html.AntiForgeryToken()
+</form>
+
+<!-- SweetAlert and Fetch for Status Change -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript">
+    function changeStatus(userId) {
+        console.log("User ID:", userId);  // Debugging line to check if `id` is correct
+
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You are about to change the status of this User.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, change it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+                // Perform the fetch request to change the status
+                fetch('/User/ChangeStatus', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': token
+                    },
+                    body: JSON.stringify({ UserId: userId }) // Pass the UserId as is
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data); // Check response data
+                        if (data.success) {
+                            Swal.fire('Updated!', 'User status has been updated.', 'success')
+                                .then(() => { location.reload(); });
+                        } else {
+                            Swal.fire('Error!', `An error occurred: ${data.message}`, 'error');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        Swal.fire('Error!', 'An unexpected error occurred.', 'error');
+                    });
+            }
+        });
+    }
+</script>

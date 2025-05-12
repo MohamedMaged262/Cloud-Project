@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e074975f3be8b53c3a4e3c9265f6f6b0b5d8b5dc9cebd66af01c3ad5ae7ebb5
-size 1015
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ZA_PLACE.Models
+{
+    public class CategoryViewModel
+    {
+        [Key]
+        public Guid CategoryId { get; set; }
+
+        [Required(ErrorMessage = "Please Add Category Title")]
+        [StringLength(100, ErrorMessage = "The Category Name must be at least 1 and at most 100 characters long.")]
+        [Display(Name = "Category Name")]
+        public string CategoryName { get; set; }
+
+        [StringLength(5000)]
+        [Display(Name = "Category Image Path")]
+        public string? CategoryImagePath { get; set; }
+
+        [Required]
+        public bool CategoryStatus { get; set; }
+
+        [Required]
+        public DateTime CreatedOn { get; set; }
+
+        public DateTime? UpdatedOn { get; set; }
+        public ICollection<Course>? Courses { get; set; } = new List<Course>();
+
+        [NotMapped] 
+        public IFormFile? clientFile { get; set; }
+    }
+}
+

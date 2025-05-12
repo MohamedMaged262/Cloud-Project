@@ -1,3 +1,441 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5eca8db925a910a6a4d5a813d3e585d7778da5c6dea9f40c8507d1e5fb58a3fc
-size 21659
+{
+  "Files": [
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ZA-PLACE.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ZA-PLACE.2rdwr5ged6.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\DatabaseFolder\\5.png",
+      "PackagePath": "staticwebassets\\DatabaseFolder\\5.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\DatabaseFolder\\Science.png",
+      "PackagePath": "staticwebassets\\DatabaseFolder\\Science.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\1.png",
+      "PackagePath": "staticwebassets\\Imgs\\1.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\2.png",
+      "PackagePath": "staticwebassets\\Imgs\\2.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\3.jpg",
+      "PackagePath": "staticwebassets\\Imgs\\3.jpg"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\4.png",
+      "PackagePath": "staticwebassets\\Imgs\\4.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\5.png",
+      "PackagePath": "staticwebassets\\Imgs\\5.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\6.png",
+      "PackagePath": "staticwebassets\\Imgs\\6.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Cards1.png",
+      "PackagePath": "staticwebassets\\Imgs\\Cards1.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Cards2.png",
+      "PackagePath": "staticwebassets\\Imgs\\Cards2.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Cards3.png",
+      "PackagePath": "staticwebassets\\Imgs\\Cards3.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Cards4.png",
+      "PackagePath": "staticwebassets\\Imgs\\Cards4.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Cards5.png",
+      "PackagePath": "staticwebassets\\Imgs\\Cards5.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Cards6.png",
+      "PackagePath": "staticwebassets\\Imgs\\Cards6.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\ContactBackground.jpg",
+      "PackagePath": "staticwebassets\\Imgs\\ContactBackground.jpg"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\ContactUS.png",
+      "PackagePath": "staticwebassets\\Imgs\\ContactUS.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Courses.png",
+      "PackagePath": "staticwebassets\\Imgs\\Courses.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\GetInTouch.jpg",
+      "PackagePath": "staticwebassets\\Imgs\\GetInTouch.jpg"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Global.png",
+      "PackagePath": "staticwebassets\\Imgs\\Global.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Instruc-1.jpg",
+      "PackagePath": "staticwebassets\\Imgs\\Instruc-1.jpg"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Instruc-2.jpg",
+      "PackagePath": "staticwebassets\\Imgs\\Instruc-2.jpg"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Instruc-3.jpg",
+      "PackagePath": "staticwebassets\\Imgs\\Instruc-3.jpg"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Instructor.png",
+      "PackagePath": "staticwebassets\\Imgs\\Instructor.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Science.png",
+      "PackagePath": "staticwebassets\\Imgs\\Science.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Stud.jpg",
+      "PackagePath": "staticwebassets\\Imgs\\Stud.jpg"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Student1.jpg",
+      "PackagePath": "staticwebassets\\Imgs\\Student1.jpg"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Student2.jpg",
+      "PackagePath": "staticwebassets\\Imgs\\Student2.jpg"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Student3.jpg",
+      "PackagePath": "staticwebassets\\Imgs\\Student3.jpg"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\Validation.jpg",
+      "PackagePath": "staticwebassets\\Imgs\\Validation.jpg"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\background.png",
+      "PackagePath": "staticwebassets\\Imgs\\background.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\girl.png",
+      "PackagePath": "staticwebassets\\Imgs\\girl.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\landing.png",
+      "PackagePath": "staticwebassets\\Imgs\\landing.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\landing2.png",
+      "PackagePath": "staticwebassets\\Imgs\\landing2.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\logo.png",
+      "PackagePath": "staticwebassets\\Imgs\\logo.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\news.png",
+      "PackagePath": "staticwebassets\\Imgs\\news.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\newsBackground.jpg",
+      "PackagePath": "staticwebassets\\Imgs\\newsBackground.jpg"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\student.png",
+      "PackagePath": "staticwebassets\\Imgs\\student.png"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\Imgs\\teacher.jpg",
+      "PackagePath": "staticwebassets\\Imgs\\teacher.jpg"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\css\\AdminDashboard.css",
+      "PackagePath": "staticwebassets\\css\\AdminDashboard.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\css\\Components.css",
+      "PackagePath": "staticwebassets\\css\\Components.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\css\\SignINstyle.css",
+      "PackagePath": "staticwebassets\\css\\SignINstyle.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\js\\AdminDashboard.js",
+      "PackagePath": "staticwebassets\\js\\AdminDashboard.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\includes\\boxicons.min.css",
+      "PackagePath": "staticwebassets\\lib\\includes\\boxicons.min.css"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Uni\\Semster 8\\Cloud Computing\\ZA-PLACE\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ZA-PLACE.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ZA-PLACE.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ZA-PLACE.props",
+      "PackagePath": "build\\ZA-PLACE.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ZA-PLACE.props",
+      "PackagePath": "buildMultiTargeting\\ZA-PLACE.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ZA-PLACE.props",
+      "PackagePath": "buildTransitive\\ZA-PLACE.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

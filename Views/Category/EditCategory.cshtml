@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf36d7f4da4a1b9f667b301b991944946791f0ef37cde8c215ee1073ce74b686
-size 2002
+﻿@model CategoryViewModel
+
+@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+}
+
+@{
+    ViewData["Title"] = "Edit Category";
+}
+<link rel="stylesheet" href="~/css/Components.css" asp-append-version="true" />
+
+<!-- Start of Form -->
+<form asp-action="EditCategory" method="post" enctype="multipart/form-data" class="formSection">
+    @Html.AntiForgeryToken()
+
+    <!-- Hidden field for CategoryId -->
+    <input type="hidden" asp-for="CategoryId" />
+
+    <div class="main-title">Edit Category</div>
+    <div class="mb-3">
+        <label asp-for="CategoryName" class="form-label">Category Name</label>
+        <input type="text" class="form-control" id="CategoryName" asp-for="CategoryName" placeholder="Category Name">
+        <span asp-validation-for="CategoryName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="clientFile" class="form-label">Upload Category Image</label>
+        <input asp-for="clientFile" class="form-control" type="file" id="formFile" onchange="loadFile(event)">
+        <img id="myImg" src="@Model.CategoryImagePath" height="150" />
+    </div>
+    <div class="d-grid gap-2">
+        <input type="submit" class="btn btn-primary" value="Save Changes">
+    </div>
+</form>
+<!-- end -->
+@if (TempData["Error"] != null)
+{
+    <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                @TempData["Error"]
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+}
+
+<script>
+    var loadFile = function (event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var myImg = document.getElementById('myImg');
+            myImg.src = reader.result;
+        }
+        reader.readAsDataURL(event.target.files[0])
+    }
+</script>

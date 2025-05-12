@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0cbac3f469ee14faf7af3fb5aafc372c1e8f80f866f3cb720a30f500366035ec
-size 1122
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZA-PLACE", "ZA-PLACE.csproj", "{0EEAD44C-981A-4510-8C85-78AC9956EA83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EEAD44C-981A-4510-8C85-78AC9956EA83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EEAD44C-981A-4510-8C85-78AC9956EA83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EEAD44C-981A-4510-8C85-78AC9956EA83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EEAD44C-981A-4510-8C85-78AC9956EA83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4F266F6-9A49-48E5-A0FE-FE08A04967F7}
+	EndGlobalSection
+EndGlobal

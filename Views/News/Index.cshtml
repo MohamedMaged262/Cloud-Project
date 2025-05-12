@@ -1,3 +1,70 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6330ddd719bb8d82466717266b367483ace1df81ebb5ca218902e378d241406a
-size 2747
+﻿@model IEnumerable<News>
+
+
+@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+}
+
+@{
+    ViewData["Title"] = "News Dashboard";
+}
+<link rel="stylesheet" href="~/css/Components.css" asp-append-version="true" />
+
+<!-- new News -->
+<div class="newNews">
+    <a asp-controller="News" asp-action="CreateNews"><i class='bx bx-plus-circle'></i></a>
+    <div class="NewNewsText">
+        Create New Article
+    </div>
+</div>
+<!-- news -->
+@foreach (var News in Model)
+{
+    <div class="card mb-3 CardStyle" style="max-width: 100%;">
+        <div class="row g-0 p-3">
+            <div class="col-md-4">
+                <img src="@Url.Content(News.NewsPhotoPath)" class="img-fluid rounded-start" alt="News Image">
+            </div>
+            <div class="col-md-8 p-3">
+                <div class="card-body">
+                    <h5 class="card-title">@News.NewsTitle</h5>
+                    <p class="card-text">@News.NewsDescription</p>
+                    <p class="card-text"><small class="text-muted">CreatedOn: @News.CreatedOn</small></p>
+                    <p class="card-text"><small class="text-muted">UpdatedOn: @News.UpdatedOn</small></p>
+                </div>
+                <button type="button" class="btn btn-success" onclick="window.location.href='@Url.Action("EditNews", "News", new { id = News.NewsId })'">
+                    <i class='bx bxs-edit-alt'></i>
+                </button>
+                <!-- Form to handle POST delete -->
+                <form asp-action="DeleteNews" method="post" style="display:inline;" id="deleteForm-@News.NewsId">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="id" value="@News.NewsId" />
+                    <button type="button" class="btn btn-danger" onclick="confirmDelete('@News.NewsId')">
+                        <i class='bx bxs-trash'></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+<!-- end -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript">
+    function confirmDelete(newsId) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "This action cannot be undone!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Submit the corresponding form to perform a POST request for deletion
+                document.getElementById('deleteForm-' + newsId).submit();
+            }
+        })
+    }
+</script>

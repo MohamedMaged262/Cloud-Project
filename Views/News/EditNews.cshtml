@@ -1,3 +1,78 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f91523a3e5749b25d60d09f909f157f217e3d34c0ead54cff433d19f2ac32d4d
-size 2975
+﻿@model ZA_PLACE.ViewModel.NewsViewModel
+
+@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+}
+
+@{
+    ViewData["Title"] = "Edit News";
+}
+
+<link rel="stylesheet" href="~/css/Components.css" asp-append-version="true" />
+
+<!-- Start of Form -->
+<form asp-action="EditNews" method="post" enctype="multipart/form-data" class="formSection">
+    @Html.AntiForgeryToken()
+
+    <!-- Hidden field for NewsId -->
+    <input type="hidden" asp-for="NewsId" />
+
+    <div class="main-title">Edit News</div>
+
+    <div class="mb-3">
+        <label asp-for="NewsTitle" class="form-label">News Title</label>
+        <input type="text" class="form-control" id="NewsTitle" asp-for="NewsTitle" placeholder="News Title">
+        <span asp-validation-for="NewsTitle" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="NewsDescription" class="form-label">News Description</label>
+        <textarea class="form-control" asp-for="NewsDescription" id="NewsDescription" rows="7"></textarea>
+        <span asp-validation-for="NewsDescription" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="clientFile" class="form-label">Upload News Image</label>
+        <input asp-for="clientFile" class="form-control" type="file" id="formFile" onchange="loadFile(event)">
+        <img id="myImg" src="@Url.Content(Model.NewsPhotoPath)" height="150" alt="Uploaded Image Preview" />
+        <span asp-validation-for="clientFile" class="text-danger"></span>
+    </div>
+
+    <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary" id="saveButton">Save Changes</button>
+    </div>
+</form>
+<!-- end -->
+<!-- File Preview Script -->
+<script>
+    var loadFile = function (event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var myImg = document.getElementById('myImg');
+            myImg.src = reader.result;
+        }
+        reader.readAsDataURL(event.target.files[0])
+    }
+</script>
+
+<!-- SweetAlert Integration -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript">
+        document.getElementById("saveButton").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the form from submitting automatically
+
+            Swal.fire({
+                title: 'Save changes?',
+                text: "Are you sure you want to update this news article?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, save it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Submit the form if confirmed
+                    document.forms[0].submit();
+                }
+            });
+        });
+    </script>
+

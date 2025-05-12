@@ -1,3 +1,97 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5912f91a0aedf68038004233627d3d72d517717d6fe3be39d13cb166efb37324
-size 3779
+﻿@model Course
+
+@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+    ViewData["Title"] = "Edit Course";
+}
+<link rel="stylesheet" href="~/css/Components.css" asp-append-version="true" />
+
+<!-- Start of Form -->
+<form asp-action="EditCourses" method="post" enctype="multipart/form-data" class="formSection">
+    <input type="hidden" asp-for="CourseId" />
+
+    <div class="main-title">Edit Course</div>
+
+    <!-- Course Title -->
+    <div class="mb-3">
+        <label asp-for="CourseName" class="form-label">Course Title</label>
+        <input asp-for="CourseName" class="form-control" id="CourseName" placeholder="Course Title">
+        <span asp-validation-for="CourseName" class="text-danger"></span>
+    </div>
+
+    <!-- Course Description -->
+    <div class="mb-3">
+        <label asp-for="CourseDescription" class="form-label">Course Description</label>
+        <textarea asp-for="CourseDescription" class="form-control" id="CourseDescription" rows="7"></textarea>
+        <span asp-validation-for="CourseDescription" class="text-danger"></span>
+    </div>
+
+    <!-- Category Dropdown -->
+    <div class="mb-3">
+        <label asp-for="CategoryId" class="form-label">Category</label>
+        <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryList">
+            <option value="">Select Category</option>
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <!-- Age Dropdown -->
+    <div class="mb-3">
+        <label asp-for="AgeId" class="form-label">Age</label>
+        <select asp-for="AgeId" class="form-control" asp-items="ViewBag.AgeList">
+            <option value="">Select Age</option>
+        </select>
+        <span asp-validation-for="AgeId" class="text-danger"></span>
+    </div>
+
+    <!-- Course Meeting Link -->
+    <div class="mb-3">
+        <label asp-for="CourseMeetingLink" class="form-label">Course Meeting Link</label>
+        <input type="text" class="form-control" id="CourseMeetingLink" asp-for="CourseMeetingLink" placeholder="Course Meeting Link">
+        <span asp-validation-for="CourseMeetingLink" class="text-danger"></span>
+    </div>
+
+    <!-- Upload Course Image -->
+    <div class="mb-3">
+        <label asp-for="clientFile" class="form-label">Upload Course Image</label>
+        <input asp-for="clientFile" class="form-control" type="file" id="formFile" onchange="loadFile(event)">
+        <img id="myImg" height="150" src="@Model.CourseImagePath" />
+    </div>
+
+    <!-- Upload Course Video -->
+    <div class="mb-3">
+        <label asp-for="clientVideo" class="form-label">Upload Course Video</label>
+        <input asp-for="clientVideo" class="form-control" type="file" id="formVideo" onchange="loadVideo(event)">
+        <video id="myVideo" height="150" src="@Model.CourseVideoPath"></video>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="d-grid gap-2">
+        <input type="submit" class="btn btn-primary" value="Update Course">
+    </div>
+</form>
+
+<script>
+    var loadFile = function (event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var myImg = document.getElementById('myImg');
+            myImg.src = reader.result;
+        }
+        if (event.target.files[0]) {
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    }
+
+    var loadVideo = function (event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var myVideo = document.getElementById('myVideo');
+            myVideo.src = reader.result;
+        }
+        if (event.target.files[0]) {
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    }
+</script>
+

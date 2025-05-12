@@ -1,3 +1,64 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4bb15d51aebd5ea4d61eae208cc5a92b342f5b65c3a8dac62b08c9bee291cd1
-size 2421
+﻿@model ZA_PLACE.Models.Resource
+
+@{
+    Layout = "~/Views/Shared/AdminDashboard.cshtml";
+    ViewData["Title"] = "Create Resource";
+}
+<link rel="stylesheet" href="~/css/Components.css" asp-append-version="true" />
+
+<form asp-action="CreateResource" method="post" enctype="multipart/form-data" class="formSection">
+    <div class="main-title">Create Resource</div>
+
+    @Html.AntiForgeryToken()
+
+    <!-- Hidden field to store CourseId -->
+    <input type="hidden" name="CourseId" value="@ViewBag.CourseId" />
+
+    <!-- Resource Title -->
+    <div class="mb-3">
+        <label asp-for="ResourceName" class="form-label">Resource Title</label>
+        <input asp-for="ResourceName" class="form-control" id="ResourceName" placeholder="Resource Title" />
+        <span asp-validation-for="ResourceName" class="text-danger"></span>
+    </div>
+
+    <!-- Content Dropdown -->
+    <div class="mb-3">
+        <label asp-for="ContentId" class="form-label">Content</label>
+        <select asp-for="ContentId" class="form-control" asp-items="ViewBag.CategoryList">
+            <option value="">Select Content</option> <!-- Default option -->
+        </select>
+        <span asp-validation-for="ContentId" class="text-danger"></span>
+    </div>
+
+    <!-- Resource Link -->
+    <div class="mb-3">
+        <label asp-for="ResourceLink" class="form-label">Resource Link</label>
+        <input asp-for="ResourceLink" class="form-control" id="ResourceLink" placeholder="Resource Link" />
+        <span asp-validation-for="ResourceLink" class="text-danger"></span>
+    </div>
+
+    <!-- Upload File -->
+    <div class="mb-3">
+        <label asp-for="clientFile" class="form-label">Upload File</label>
+        <input asp-for="clientFile" class="form-control" type="file" id="formFile" onchange="loadFile(event)" />
+        <img id="myImg" height="150" />
+    </div>
+
+    <!-- Submit Button -->
+    <div class="d-grid gap-2">
+        <input type="submit" class="btn btn-primary" value="Create Resource" />
+    </div>
+</form>
+
+<script>
+    var loadFile = function (event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var myImg = document.getElementById('myImg');
+            myImg.src = reader.result;
+        }
+        if (event.target.files[0]) {
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    }
+</script>

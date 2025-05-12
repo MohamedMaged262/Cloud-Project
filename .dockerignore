@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7888b91fe62447e426880882239d575e888b95e4bd86e5a5cba2ba488696448c
-size 153
+echo "bin/" >> .dockerignore
+echo "obj/" >> .dockerignore
+echo ".vs/" >> .dockerignore
+echo "*.user" >> .dockerignore
+echo "*.suo" >> .dockerignore

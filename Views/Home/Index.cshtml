@@ -1,3 +1,253 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b60cce684e53c525cd789b1def23c1037824fe3b4444397e3ae7ddd690dcb94
-size 9561
+﻿@model ZAPLACE.ViewModel.LastCourseCategoryViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- landing Section -->
+<section id="Home" class="Home">
+    <div class="home-text shade blackboard">
+        <h6>Best Online Learning Platform</h6>
+        <h1>Accessible Online Courses For All</h1>
+        <p>Own your future Learning New Skills</p>
+        <div class="latter">
+            <a class="SignIn" asp-area="Identity" asp-page="/Account/Login">Sign-In</a>
+            <a class="SignUp" asp-area="Identity" asp-page="/Account/Register">Sign-Up</a>
+        </div>
+    </div>
+    <div class="home-img">
+        <img class="right" src="~/imgs/landing.png" alt="langing page">
+        <img class="left" src="~/imgs/landing2.png" alt="langing page">
+    </div>
+</section>
+<!-- numbers section -->
+<section class="numbers">
+    <div class="numbers-Box">
+        <div class="numbers-icon pink">
+            <img src="~/imgs/student.png" alt="students">
+        </div>
+        <div class="numbers-text">
+            <h4>75,992</h4>
+            <p>Students Enrolled</p>
+        </div>
+    </div>
+    <div class="numbers-Box">
+        <div class="numbers-icon purple">
+            <img src="~/imgs/Courses.png" alt="Courses">
+        </div>
+        <div class="numbers-text">
+            <h4>546</h4>
+            <p>Total Courses</p>
+        </div>
+    </div>
+    <div class="numbers-Box">
+        <div class="numbers-icon yellow">
+            <img src="~/imgs/Instructor.png" alt="Instructor">
+        </div>
+        <div class="numbers-text">
+            <h4>5,298</h4>
+            <p>Online Learners</p>
+        </div>
+    </div>
+    <div class="numbers-Box">
+        <div class="numbers-icon blue">
+            <img src="~/imgs/Global.png" alt="Global">
+        </div>
+        <div class="numbers-text">
+            <h4>44,000</h4>
+            <p>Foreign Followers</p>
+        </div>
+    </div>
+</section>
+<!-- Categories Section -->
+<section class="categories" id="categories">
+    <div class="center-text">
+        <h5>Categories</h5>
+        <h2>Popular Categories</h2>
+    </div>
+    <div class="categories-content">
+        @foreach (var category in Model.LastCategory)
+        {
+            <div class="box">
+                <img src="@category.CategoryImagePath" alt="@category.CategoryName">
+                <h3>@category.CategoryName</h3>
+            </div>
+        }
+    </div>
+    <div class="main-btn">
+        <a asp-controller="Home" asp-action="AllCategory" class="btn">All Categories</a>
+    </div>
+</section>
+<!-- course Section -->
+<section class="Courses" id="Course">
+    <div class="center-text">
+        <h5>Courses</h5>
+        <h2>Explore Popular Courses</h2>
+    </div>
+    <div class="courses-content">
+        @foreach (var course in Model.LastCourse)
+        {
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="@course.CourseImagePath" alt="Course image">
+                <div class="card-body">
+                    <h5 class="card-title">@course.CourseName</h5>
+                    <p class="card-text">@course.CourseDescription</p>
+                    <a href="/Identity/Account/Login?returnUrl=@Url.Action("CoursePage", "Course", new { id = course.CourseId })" class="btn btn-primary custom-btn">Apply Now</a>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="main-btn">
+        <a asp-controller="Home" asp-action="AllCourses" class="btn">All Course</a>
+    </div>
+</section>
+<!-- About Section -->
+<section id="AboutUS" class="AboutUs">
+    <div class="center-text">
+        <h5>Must be known</h5>
+        <h2>About US</h2>
+    </div>
+    <div class="contain">
+        <div class="aboutImg">
+            <img src="~/imgs/logo.png" alt="about us img">
+        </div>
+        <div class="middleImg">
+            <img src="~/imgs/girl.png" class="middle" alt="girl">
+        </div>
+        <div class="aboutText">
+            <h6>Best Online Learning Platform</h6>
+            <h2>About Us</h2>
+            <p>
+                At Zaplace Education Center, we’re all about creating amazing educational experiences. 
+                Our team is made up of passionate educators and curious minds, all focused on helping students grow and excel.
+                We provide a variety of top-notch programs that cater to individual learning styles, creating a supportive and 
+                inclusive environment where students can thrive academically and personally.
+            </p>
+            <div class="main-btn">
+                <a asp-controller="Home" asp-action="AboutUsExtra" class="readMore">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CTA -->
+<section class="cta" id="cta">
+    <div class="center-text">
+        <h5>Trusted By</h5>
+        <h2>500+ Leading Schools and Universities</h2>
+    </div>
+    <div class="cta-content">
+        <div class="cta-img">
+            <img src="~/imgs/Cards1.png" alt="cta 1">
+        </div>
+        <div class="cta-img">
+            <img src="~/imgs/Cards2.png" alt="cta 2">
+        </div>
+        <div class="cta-img">
+            <img src="~/imgs/Cards3.png" alt="cta 3">
+        </div>
+        <div class="cta-img">
+            <img src="~/imgs/Cards4.png" alt="cta 4">
+        </div>
+        <div class="cta-img">
+            <img src="~/imgs/Cards5.png" alt="cta 5">
+        </div>
+        <div class="cta-img">
+            <img src="~/imgs/Cards6.png" alt="cta 6">
+        </div>
+    </div>
+</section>
+<!-- Instructor Section -->
+<section class="Instructor" id="Instructor">
+    <div class="center-text">
+        <h5>Instructors</h5>
+        <h2>Instructors</h2>
+    </div>
+    <div class="Instructor-container">
+        <div class="InstructorImg">
+            <img src="~/imgs/teacher.jpg" alt="Instructor img">
+        </div>
+        <div class="Instructor-text">
+            <h6>Best Online Learning Platform</h6>
+            <h2>Instructor</h2>
+            <p>
+                Our students want to learn from qualified educators like you. All you need is your expertise, a device, and a wifi connection.
+                Which online tutoring level are you looking for?
+                Learn from the best teachers. Connect with an experienced teacher with expertise in the subject you need.
+            </p>
+            <div class="main-btn">
+                <a asp-controller="Home" asp-action="InstructorExtra" class="readMore">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Student Section -->
+<section class="Student" id="Student">
+    <div class="center-text">
+        <h5>Student</h5>
+        <h2>Student</h2>
+    </div>
+    <div class="Student-container">
+        <div class="StudentImg">
+            <img src="~/imgs/Stud.jpg" alt="Student img">
+        </div>
+        <div class="Student-text">
+            <h6>Best Online Learning Platform</h6>
+            <h2>Student</h2>
+            <p>
+                No matter your level of study, you’ll find an online tutor for you. students can connect with the 
+                best experienced teachers. You’ve come to the right place to find the best tutors. Our online tutors 
+                are ready to give you the help you need.
+            </p>
+            <div class="main-btn">
+                <a asp-controller="Home" asp-action="StudentExtra" class="readMore">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ContactUs Section -->
+<section class="ContactUs" id="ContactUs">
+    <div class="center-text">
+        <h5>Get in touch</h5>
+        <h2>Contact Us</h2>
+    </div>
+    <div class="ContactUs-container">
+        <div class="ContactUs-img">
+            <img src="~/imgs/ContactUS.png" alt="ContactUs">
+        </div>
+        <div class="ContactUs-text">
+            <h2>Contact Us</h2>
+            <li><a href="#">Egypt Cairo, <br> فيلا ٢٩٦ التجمع الخامس المستثمرين الجنوبيين كمبوند الدفاع الوطني</a></li>
+            <li><a href="#">ZaPlace.edu.cent@gmail.com</a></li>
+            <li><a href="#">+20 100 747 1007</a></li>
+            <li><a href="#">What'sapp</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <div class="main-btn">
+                <a asp-controller="Home" asp-action="ContactUsExtra" class="readMore">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- News Seciton -->
+<section class="news" id="News">
+    <div class="center-text">
+        <h5>News & Articles</h5>
+        <h2>Our Latest News</h2>
+    </div>
+    <div class="news-container">
+        <div class="news-img">
+            <img src="~/imgs/news.png" alt="news">
+        </div>
+        <div class="news-text">
+            <h2>Want to Share our New Knowledge? Join Us Now</h2>
+            <p>
+                We’re committed to honesty, inclusivity, and continuously improving our programs. 
+                We also protect student privacy and meet all educational standards
+            </p>
+            <h4>Best Courses</h4>
+            <h5>Top Rated Instructors</h5>
+            <div class="main-btn">
+                <a asp-controller="Home" asp-action="AllNews" class="readMore">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>

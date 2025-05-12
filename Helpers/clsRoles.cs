@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c507407b80adcff8703c2fe430b3327c0fdf0d4c6a0ee9cc9275680606967840
-size 280
+﻿namespace ZA_PLACE.Helpers // Change to the appropriate namespace
+{
+    public static class clsRoles
+    {
+        public const string roleAdmin = "ADMIN";
+        public const string roleStudent = "STUDENT";
+        public const string roleTeacher = "TEACHER";
+    }
+}
