@@ -6,9 +6,9 @@ WORKDIR /app
 COPY ZA-PLACE.csproj ./
 RUN dotnet restore
 
-# Copy the rest of the application and publish
+# Copy the rest of the application and publish the project (not the solution!)
 COPY . ./
-RUN dotnet publish -c Release -o out
+RUN dotnet publish ZA-PLACE.csproj -c Release -o out
 
 # Stage 2: Run
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
